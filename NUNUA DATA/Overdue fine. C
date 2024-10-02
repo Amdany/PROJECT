@@ -1,0 +1,48 @@
+//Program to calculate fine for overdue days
+/*
+Author:Cylvia Amdany
+Date:28/09/2024
+*/
+
+#include<stdio.h>
+int main(){
+	int bookID;
+	int dueDate;
+	int returnDate;
+	int daysOverdue;
+	int fineRate;
+	int fineAmount;
+	
+	printf("enter bookID");
+	scanf("%d",&bookID);
+	
+	printf("enter due date");
+	scanf("%d",&dueDate);
+	
+	printf("enter returndate");
+	scanf("%d",&returnDate);
+
+daysOverdue=returnDate-dueDate;
+	if(daysOverdue>=0 && daysOverdue<=7){
+		fineRate= 20;
+	}else if(daysOverdue >=8 && daysOverdue <= 14){
+		fineRate=50;
+	}else if(daysOverdue>=15){
+		fineRate=100;
+	} else {
+		daysOverdue=0 ;
+		fineRate=0;
+		}
+		
+	fineAmount=fineRate*daysOverdue;
+	
+	printf("bookID:%d ",bookID);
+	printf("dueDate:%d ",dueDate);
+	printf("returnDate:%d  ",returnDate);
+	printf("daysOverdue:%d ",daysOverdue);
+	printf("fineRate:%d ",fineRate);
+	printf("fineAmount:%d ",fineAmount);
+		
+
+ return 0;
+ }

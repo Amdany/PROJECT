@@ -1,0 +1,22 @@
+//program for loan qualification
+/*
+Author:Cylvia Amdany
+Date:28/09/2024
+*/
+
+#include<stdio.h>
+int main(){
+	 int age;
+	 int annualIncome;
+	 
+	 printf("enter age");
+	 scanf("%d",&age);
+	 
+	 printf("enter annualIncome");
+	 scanf("%d",&annualIncome);
+	  if(age>=21 && annualIncome>=21000){
+	   printf("congratulations,you qualify for the loan");}
+	   else{printf("unfortunately,we are unable to offer you a loan at this time");}
+	 	 
+    return 0;	
+ }
