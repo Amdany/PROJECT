@@ -1,0 +1,24 @@
+//Do while loop control
+/*Author:Cylvia Amdany
+Ref.no:CT101/G/22712/24*/
+
+#include<stdio.h>
+int main(){
+	int sum=0,start,stop;
+	printf("Enter start");
+	scanf("%d",& start);
+	
+	printf("Enter stop");
+	scanf("%d",&stop);
+	
+	do{printf("%d\n",start);
+	sum=sum+start;
+	sum+=start;
+	start++;}
+	
+	while(start,start<=stop);
+	
+	printf("The sum%d",sum);
+	
+	return 0;
+}

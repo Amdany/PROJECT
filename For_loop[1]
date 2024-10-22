@@ -1,0 +1,17 @@
+//for loop 
+#include<stdio.h>
+int main(){
+	int start,stop,sum=0;
+	 printf("Enter where to start");
+	 scanf("%d",&start);
+	 
+	 printf("Enter where to stop");
+	 scanf("%d",&stop);
+	
+	for(start;start<=stop;start++){
+		printf("%d\n",start);
+		sum=sum+start;}
+		printf("The sum is %d",sum);
+		
+		return 0;
+}
